@@ -1,0 +1,53 @@
+.view h3{
+    margin-bottom: 8px;
+}
+table{
+    width: 100%;
+    text-align: left;
+    overflow: auto;
+    border-collapse: collapse;
+}
+th{
+    background: rgba(225, 245, 254,1);
+}
+th, td{
+    padding: 10px;
+    min-width: 102px;
+}
+.location{
+    min-width: 150px;
+}
+.basicInfo{
+    overflow: auto;
+}
+.basicInfo::-webkit-scrollbar {
+    height: 10px;
+}
+.basicInfo::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.basicInfo::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+}
+.expiring{
+    font-weight: bold;
+    animation: expiring 2s infinite linear;
+}
+.expired{
+    color: red;
+    font-weight: bold;
+}
+@keyframes expiring{
+    0%{
+        color: #fff;
+    }
+    30%{
+        color: red;
+    }
+    70%{
+        color: red;
+    }
+    100%{
+        color: #fff;
+    }
+}
